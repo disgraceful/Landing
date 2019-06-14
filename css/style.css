@@ -33,6 +33,7 @@ a{
     padding: 0 40px;
     margin: auto;
     vertical-align: baseline;
+    flex-wrap: nowrap;
 }
 .navbar ul{
     list-style: none;
@@ -69,7 +70,17 @@ a{
 }
 
 .navbar .link:hover{
-    /* background-color: #f65555; */
     opacity: 0.85;
     box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.5);
+}
+
+#home{
+    padding: 50px 0 30px 0;
+}
+
+.container{
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
 }
