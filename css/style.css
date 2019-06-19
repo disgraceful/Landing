@@ -180,8 +180,11 @@ ul {
   justify-content: center;
 }
 
-.container-static.container-small {
+.container-small {
   max-width: 920px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .products-text {
@@ -245,8 +248,8 @@ ul {
   position: relative;
 }
 
-.feature-img-div.reverse{
-  order:1;
+.feature-img-div.reverse {
+  order: 1;
 }
 
 .feature-text h2 {
@@ -278,6 +281,55 @@ ul {
 
 .feature-link:hover::after {
   width: 80%;
+}
+
+#advertisment {
+  padding: 80px 0;
+  background-color: #7938fa;
+  color: #fff;
+}
+
+.ad-header {
+  flex: 0 0 100%;
+  margin-bottom: 60px;
+}
+
+.ad-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2em;
+}
+
+.ad-header p {
+  margin: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ad-num {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+}
+
+.ad-num h1 {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.ad-footer {
+  flex: 0 0 100%;
+  margin: 40px 0;
+}
+
+.ad-footer .ad-link {
+  transition: 0.2s;
+}
+
+.ad-footer .ad-link:hover {
+  border-bottom: 1px solid #fff;
 }
 
 @media (min-width: 576px) {
