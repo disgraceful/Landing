@@ -113,6 +113,7 @@ ul {
   font-size: 28px;
   font-weight: 600;
   line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .section-subtext {
@@ -171,9 +172,16 @@ ul {
   padding: 0 20px;
   margin: 0 auto;
   text-align: center;
+}
+
+.container-flex{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.container-static.container-small{
+  max-width: 920px;
 }
 
 .products-text {
@@ -207,6 +215,50 @@ ul {
   position: relative;
   top: 25%;
   font-size: 28px;
+}
+
+#features{
+  padding: 80px 0;
+}
+
+.features-header{
+  margin-bottom: 50px;
+}
+
+.features-container{
+  display:flex;
+  align-items: center;
+  justify-items: center;
+  margin: 80px 0;
+}
+
+.feature-img-div{
+  padding: 0 40px;
+  flex: 0 0 500px;
+}
+
+.feature-img-div .feature-img{
+  max-width:100%;
+  height:auto;
+}
+
+.features-text{
+  flex: 1;
+  padding: 0 40px;
+  text-align:left;
+}
+
+.features-text h2{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.features-text p{
+  margin-bottom: 12px;
+}
+
+.feature-link{
+  
 }
 
 @media (min-width: 576px) {
