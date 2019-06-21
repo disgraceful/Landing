@@ -332,6 +332,52 @@ ul {
   border-bottom: 1px solid #fff;
 }
 
+#benefits{
+  padding: 80px 0;
+}
+
+.benefits-section{
+  display: flex;
+  flex: 1 0 40%;
+  flex-direction: column;
+  text-align: left;
+}
+
+.benefits-items{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.benefits-icon-div{
+  float: left;
+  width: 15%;
+}
+
+.benefits-icons{
+  font-size: 34px;  
+}
+
+.benefits-text{
+  float: right;
+  width: 85%;;
+}
+
+.benefits-text h2{
+font-size: 22px;
+font-weight: 600;
+margin-bottom: 12px;
+}
+
+.graph-container{
+  flex: 1 0 60%;
+  margin-left: 24px;
+}
+
+.graph-container img{
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
