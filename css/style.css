@@ -369,8 +369,8 @@ margin-bottom: 12px;
 }
 
 .graph-container{
-  flex: 1 0 60%;
-  margin-left: 24px;
+  flex: 0 0 60%;
+  padding-left: 36px;
 }
 
 .graph-container img{
