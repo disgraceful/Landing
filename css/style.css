@@ -338,14 +338,14 @@ ul {
 
 .benefits-section{
   display: flex;
-  flex: 1 0 40%;
+  flex: 0 0 100%;
   flex-direction: column;
   text-align: left;
+  padding-bottom: 24px; 
 }
 
 .benefits-items{
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
 }
 
 .benefits-icon-div{
@@ -369,8 +369,10 @@ margin-bottom: 12px;
 }
 
 .graph-container{
-  flex: 0 0 60%;
-  padding-left: 36px;
+  flex: 0 0 100%;
+  align-self: center;
+  padding-left: 24px;
+  padding-right: 24px
 }
 
 .graph-container img{
@@ -434,4 +436,18 @@ margin-bottom: 12px;
     flex: 0 0 33.333%;
     padding: 30px 26px;
   }
+
+  .benefits-section{
+    display: flex;
+    flex: 0 0 40%;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .graph-container{
+    flex: 0 0 60%;
+    align-self: center;
+    padding-left: 36px;
+  }
+  
 }
