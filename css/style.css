@@ -470,6 +470,29 @@ ul {
   transform: scaleX(1);
 }
 
+.carousel-dots{
+  margin-top: 12px;
+}
+
+.dot{
+  display: inline-block;
+  text-decoration: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 2px;
+  margin-right: 6px;
+  margin-left: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dot:hover{
+  background-color: #8798ab;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -529,6 +552,10 @@ ul {
 
   .review.visible{
     display: flex;
+  }
+
+  .carousel-dots{
+    display: none;
   }
 }
 
