@@ -402,6 +402,7 @@ ul {
 
 .review {
   display: flex;
+  flex-direction: column;
   flex: 0 0 100%;
   margin-bottom: 56px;
 }
@@ -586,9 +587,6 @@ ul {
   .ad-num {
     flex: 0 0 33.33%;
     max-width: 33.33%;
-  }
-  .carousel-dots {
-    display: none;
   }
 }
 
