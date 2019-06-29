@@ -34,6 +34,7 @@ ul {
   background: #fff;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
 }
+
 .navbar {
   display: flex;
   max-width: 920px;
@@ -42,6 +43,7 @@ ul {
   vertical-align: baseline;
   flex-wrap: nowrap;
 }
+
 .navbar ul {
   text-align: end;
   flex-grow: 1;
@@ -59,11 +61,12 @@ ul {
   opacity: 0.7;
 }
 
-.navbar .logo {
+.logo {
   flex-shrink: 1;
   color: #ec1313;
   font-weight: 600;
   padding: 5px;
+  font-size: 18px;
 }
 
 .link {
@@ -221,6 +224,7 @@ ul {
   font-size: 20px;
   font-weight: 600;
 }
+
 .icon {
   position: relative;
   top: 25%;
@@ -448,7 +452,7 @@ ul {
   color: #8798ab;
   position: relative;
   font-weight: 500;
-  font-size: 14px;
+
 }
 
 .company-link::after {
@@ -542,18 +546,49 @@ ul {
   text-transform: uppercase;
 }
 
+#main-footer {
+  background-color: #f6f6fd;
+  padding: 15px 16px;
+}
+
+.footer-content {
+  font-size: 12px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.footer-content li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.rights {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-content .company-link{
+  color: #000;
+  font-size: 12px;
+}
+
+.footer-content .company-link::after {
+  background-color: #000;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
-
   .review {
     flex: 0 0 70%;
   }
-
   .ad-num {
     flex: 0 0 33.33%;
     max-width: 33.33%;
+  }
+  .carousel-dots {
+    display: none;
   }
 }
 
@@ -562,12 +597,10 @@ ul {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
   .navbar {
     padding: 0;
     justify-content: space-between;
   }
-
   .navbar ul {
     display: none;
   }
@@ -577,53 +610,48 @@ ul {
   .container {
     max-width: 720px;
   }
-
   .container-large {
     max-width: 1020px;
   }
-
   .navbar .btn {
     display: none;
   }
-
   .product-item {
     flex: 0 0 50%;
     padding: 30px 26px;
   }
-
   .feature-container {
     display: flex;
     align-items: center;
     justify-items: center;
     margin: 80px 0;
   }
-
   .feature-img-div {
     flex: 0 0 500px;
   }
-
   .review {
     flex-flow: row;
     flex: 0 0 70%;
   }
-
   .review.visible {
     display: flex;
-  }
-
-  .carousel-dots {
-    display: none;
   }
 
   .pricing-plan {
     flex: 0 0 50%;
     padding: 0 12px;
   }
-
   .pricing-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+  }
+  .footer-content {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-content ul {
+    text-align: end;
   }
 }
 
@@ -631,33 +659,27 @@ ul {
   .container {
     max-width: 990px;
   }
-
   .container-large {
     max-width: 1120px;
   }
-
   .product-item {
     flex: 0 0 33.333%;
     padding: 30px 26px;
   }
-
   .benefits-section {
     display: flex;
     flex: 0 0 40%;
     flex-direction: column;
     text-align: left;
   }
-
   .graph-container {
     flex: 0 0 60%;
     align-self: center;
     padding-left: 36px;
   }
-
   .review {
     flex: 0 0 45%;
   }
-
   .reviews-container {
     justify-content: space-around;
   }
