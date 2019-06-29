@@ -73,7 +73,6 @@ ul {
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  
 }
 
 .navbar .link {
@@ -401,7 +400,6 @@ ul {
   display: flex;
   flex: 0 0 100%;
   margin-bottom: 56px;
-  flex-flow: column;
 }
 
 .review.visible {
@@ -498,22 +496,20 @@ ul {
   padding: 80px 0;
 }
 
-.pricing-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
 .pricing-header {
   padding-bottom: 60px;
 }
 
-.pricing-plan {
-  flex: 0 0 35%;
+.plan-content {
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  max-width: 400px;
+  max-width: 360px;
   padding: 50px 40px;
+  margin: 0 auto;
+}
+
+.pricing-plan {
+  margin-bottom: 50px;
 }
 
 .price {
@@ -528,11 +524,12 @@ ul {
   padding-top: 20px;
   padding-bottom: 60px;
 }
+
 .pricing-features li {
- padding-left: 30px;
- height: 40px;
- padding-top: 7px;
-  background: url('../assets/list_1.png') no-repeat left center;
+  padding-left: 30px;
+  height: 40px;
+  padding-top: 7px;
+  background: url("../assets/list_1.png") no-repeat left center;
 }
 
 .pricing-features li.unavailable {
@@ -616,6 +613,17 @@ ul {
 
   .carousel-dots {
     display: none;
+  }
+
+  .pricing-plan {
+    flex: 0 0 50%;
+    padding: 0 12px;
+  }
+
+  .pricing-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
   }
 }
 
