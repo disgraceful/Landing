@@ -315,9 +315,9 @@ ul {
 }
 
 .ad-num {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+  flex: 0 0 100%;
   padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 .ad-num h1 {
@@ -398,7 +398,7 @@ ul {
 
 .review {
   display: flex;
-  flex: 0 0 70%;
+  flex: 0 0 100%;
   margin-bottom: 56px;
   flex-flow: column;
 }
@@ -492,10 +492,18 @@ ul {
 .dot:hover{
   background-color: #8798ab;
 }
-
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+  }
+
+  .review{
+    flex: 0 0 70%;
+  }
+
+  .ad-num{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
   }
 }
 
