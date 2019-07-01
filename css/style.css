@@ -273,7 +273,7 @@ section {
 
 .fancy-link::after {
   content: "";
-  background: #8798ab;
+  background-color: #8798ab;
   position: absolute;
   height: 1px;
   width: 50%;
@@ -538,13 +538,13 @@ section {
   text-align: center;
 }
 
-.footer-content .underlined {
+.footer-content .fancy-link.underlined {
   color: #000;
   font-size: 12px;
 }
 
-.footer-content .underlined::after {
-  background-color: #000;
+.footer-content .fancy-link.underlined::after {
+  background-color: #000;   
 }
 
 @media (min-width: 576px) {
