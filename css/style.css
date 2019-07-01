@@ -217,7 +217,7 @@ section {
 }
 
 .product-item .item-text {
-  margin-top: 26px;
+  margin-top: 22px;
 }
 
 .product-item .item-text h3 {
@@ -226,14 +226,10 @@ section {
   font-weight: 600;
 }
 
-.icon {
+.product-item .item-image .icon {
   position: relative;
   top: 25%;
   font-size: 28px;
-}
-
-.feature-header {
-  margin-bottom: 50px;
 }
 
 .feature-container {
@@ -250,7 +246,6 @@ section {
 }
 
 .feature-text {
-  flex: 1;
   padding: 0 40px;
   text-align: left;
   position: relative;
@@ -270,72 +265,72 @@ section {
   margin-bottom: 12px;
 }
 
-.feature-link {
+.fancy-link {
   color: #8798ab;
   position: relative;
   font-weight: 600;
 }
 
-.feature-link::after {
+.fancy-link::after {
   content: "";
+  background: #8798ab;
   position: absolute;
   height: 1px;
   width: 50%;
   bottom: 0;
   left: 0;
-  background: #8798ab;
   transition: all 0.3s ease-in-out;
 }
 
-.feature-link:hover::after {
+.fancy-link:hover::after {
   width: 80%;
 }
 
-#advertisment {
+#numbers {
   background-color: #7938fa;
   color: #fff;
 }
 
-.ad-header {
+.num-header {
   flex: 0 0 100%;
   margin-bottom: 60px;
 }
 
-.ad-header h1 {
+.num-header h1 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 16px;
   line-height: 1.2em;
 }
 
-.ad-header p {
+.num-header p {
   margin: 12px;
   font-size: 18px;
   font-weight: 600;
 }
 
-.ad-num {
+.number {
   flex: 0 0 100%;
   padding: 0 15px;
   margin-bottom: 30px;
 }
 
-.ad-num h1 {
+.number h1 {
   font-size: 46px;
   font-weight: 700;
   margin-bottom: 18px;
 }
 
-.ad-footer {
+.num-footer {
   flex: 0 0 100%;
-  margin: 40px 0;
+  margin-top: 20px;
 }
 
-.ad-footer .ad-link {
+.num-footer .num-link {
   transition: 0.2s;
 }
 
-.ad-footer .ad-link:hover {
+.num-footer .num-link:hover {
   border-bottom: 1px solid #fff;
 }
 
@@ -373,7 +368,6 @@ section {
 
 .graph-container {
   flex: 0 0 100%;
-  align-self: center;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -387,15 +381,11 @@ section {
   background-color: #f6f6fd;
 }
 
-#reviews .title {
-  padding-bottom: 42px;
-}
-
 .review {
   display: flex;
   flex-direction: column;
   flex: 0 0 100%;
-  margin-bottom: 56px;
+  margin-top: 56px;
 }
 
 .review.visible {
@@ -405,12 +395,12 @@ section {
 .review-text {
   flex: 0 1 50%;
   background-color: #7938fa;
-  padding: 46px;
   color: #fff;
+  padding: 46px;
   font-size: 20px;
   line-height: 1.5em;
-  text-align: left;
   font-weight: 600;
+  text-align: left;
 }
 
 .reviewer {
@@ -436,30 +426,18 @@ section {
   font-size: 14px;
 }
 
-.reviewer-about span {
-  color: #8798ab;
-}
-
-.company-link {
-  color: #8798ab;
-  position: relative;
+.fancy-link.underlined {
   font-weight: 500;
 }
 
-.company-link::after {
-  content: "";
-  background-color: #8798ab;
-  height: 1px;
+.fancy-link.underlined::after {
   width: 90%;
-  position: absolute;
   bottom: -2px;
-  left: 0;
-  transition: all 0.3s ease-in-out;
-  transform: scaleX(0);
   visibility: hidden;
+  transform: scaleX(0);
 }
 
-.company-link:hover::after {
+.fancy-link.underlined:hover::after {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -471,24 +449,26 @@ section {
 .dot {
   display: inline-block;
   text-decoration: none;
+  background-color: #000;
+  color: #fff;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   border: none;
-  color: #fff;
   cursor: pointer;
   padding: 2px;
   margin-right: 6px;
   margin-left: 6px;
+  opacity: 0.2;
   transition: all 0.3s ease-in-out;
 }
 
-.dot:hover {
-  background-color: #8798ab;
+.dot:hover, .dot-selected {
+  opacity: 0.6;
 }
 
 .pricing-header {
-  padding-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .plan-content {
@@ -500,7 +480,7 @@ section {
 }
 
 .pricing-plan {
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .price {
@@ -508,6 +488,10 @@ section {
   opacity: 0.7;
   font-weight: 600;
   margin: 40px 0;
+}
+
+.price-title{
+  font-size: 18px;
 }
 
 .pricing-features {
@@ -554,12 +538,12 @@ section {
   text-align: center;
 }
 
-.footer-content .company-link {
+.footer-content .underlined {
   color: #000;
   font-size: 12px;
 }
 
-.footer-content .company-link::after {
+.footer-content .underlined::after {
   background-color: #000;
 }
 
@@ -570,12 +554,9 @@ section {
   .review {
     flex: 0 0 70%;
   }
-  .ad-num {
+  .number {
     flex: 0 0 33.33%;
     max-width: 33.33%;
-  }
-  .carousel-dots {
-    display: none;
   }
 }
 
@@ -621,9 +602,12 @@ section {
   .review.visible {
     display: flex;
   }
+  .carousel-dots {
+    display: none;
+  }
   .pricing-plan {
     flex: 0 0 50%;
-    padding: 0 12px;
+    padding: 0 16px;
   }
   .pricing-container {
     display: flex;
