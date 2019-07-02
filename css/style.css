@@ -431,7 +431,7 @@ section {
 }
 
 .fancy-link.underlined::after {
-  width: 90%;
+  width: 100%;
   bottom: -2px;
   visibility: hidden;
   transform: scaleX(0);
@@ -490,7 +490,7 @@ section {
   margin: 40px 0;
 }
 
-.price-title{
+.price-title {
   font-size: 18px;
 }
 
@@ -500,11 +500,22 @@ section {
   padding-bottom: 60px;
 }
 
+.pricing-features ul {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 .pricing-features li {
-  padding-left: 30px;
-  height: 40px;
-  padding-top: 7px;
-  background: url("../assets/list_1.png") no-repeat left center;
+  flex: 0 0 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.pricing-features .list-img {
+  float: left;
+  width: 12%;
+  position: relative;
+  top: 0.2em;
 }
 
 .pricing-features li.unavailable {
@@ -544,7 +555,7 @@ section {
 }
 
 .footer-content .fancy-link.underlined::after {
-  background-color: #000;   
+  background-color: #000;
 }
 
 @media (min-width: 576px) {
