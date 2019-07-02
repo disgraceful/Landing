@@ -531,6 +531,7 @@ section {
 #main-footer {
   background-color: #f6f6fd;
   padding: 15px 16px;
+  position: relative;
 }
 
 .footer-content {
@@ -556,6 +557,19 @@ section {
 
 .footer-content .fancy-link.underlined::after {
   background-color: #000;
+}
+
+.top-btn{
+  background-color: #ec1313;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  bottom: 40px;
+  right: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
 }
 
 @media (min-width: 576px) {
